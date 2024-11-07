@@ -11,6 +11,15 @@ namespace Proyecto_bios
         static void Main(string[] args)
         {
             Console.WriteLine("Hola mundo!");
+
+console.WriteLine();
+
+
+
+
+
+
+
         }
     }
 }
