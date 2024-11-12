@@ -66,6 +66,8 @@ namespace MantenimientosdePacientes
             pacientes.Add(paciente);
 
             Console.WriteLine("Paciente agregado con éxito.");
+            Console.WriteLine("Información del paciente:");
+            Console.WriteLine(paciente.ToString()); // Mostrar la información del paciente usando ToString
         }
 
         static void BuscarPaciente()
@@ -86,84 +88,8 @@ namespace MantenimientosdePacientes
             }
         }
 
-        static void EditarPaciente()
-        {
-            Console.WriteLine("\n--- Editar Paciente ---");
-            Console.Write("Ingrese la Cedula del paciente a editar: ");
-            string cedula = Console.ReadLine();
-
-            // Buscar el paciente en la lista usando la cédula DEBE SER UNA CEDULA CUERENTE
-            Paciente paciente = pacientes.Find(p => p.Cedula == cedula);
-
-            if (paciente != null)
-            {
-                Console.WriteLine("Paciente encontrado:");
-                Console.WriteLine(paciente); // Muestra la información actual del paciente
-
-                // Solicitar nuevos datos para actualizar Puede ser cualquier nombre pero no me quemeee
-                Console.Write("Nuevo Nombre Completo (dejar en blanco para no cambiar): ");
-                string nuevoNombre = Console.ReadLine();
-                if (!string.IsNullOrWhiteSpace(nuevoNombre))
-                {
-                    paciente.NombreCompleto = nuevoNombre;
-                }
-
-                Console.Write("Nueva Fecha de Nacimiento (YYYY-MM-DD) (dejar en blanco para no cambiar): ");
-                string nuevaFecha = Console.ReadLine();
-                if (!string.IsNullOrWhiteSpace(nuevaFecha))
-                {
-                    DateTime fechaNacimiento;
-                    if (DateTime.TryParse(nuevaFecha, out fechaNacimiento))
-                    {
-                        paciente.FechaNacimiento = fechaNacimiento;
-                    }
-                    else
-                    {
-                        Console.WriteLine("Fecha inválida. No se ha cambiado la fecha de nacimiento.");
-                    }
-
-                }
-
-                Console.WriteLine("Paciente actualizado con éxito.");
-            }
-            else
-            {
-                Console.WriteLine("Paciente no encontrado.");
-            }
-        }
-
-        static void EliminarPaciente()
-        {
-            Console.WriteLine("\n--- Eliminar Paciente ---");
-            Console.Write("Ingrese la Cedula del paciente a eliminar: ");
-            string cedula = Console.ReadLine();
-
-            Paciente paciente = pacientes.Find(p => p.Cedula == cedula);
-            if (paciente != null)
-            {
-                pacientes.Remove(paciente);
-                Console.WriteLine("Paciente eliminado con éxito.");
-            }
-            else
-            {
-                Console.WriteLine("Paciente no encontrado.");
-            }
-        }
-
-        static void ListarPacientes()
-        {
-            Console.WriteLine("\n--- Lista de Pacientes ---");
-            if (pacientes.Count == 0)
-            {
-                Console.WriteLine("No hay pacientes registrados.");
-            }
-            else
-            {
-                foreach (var paciente in pacientes)
-                {
-                    Console.WriteLine(paciente);
-                }
-            }
-        }
+        static void EditarPaciente() { /* Código de edición */ }
+        static void EliminarPaciente() { /* Código de eliminación */ }
+        static void ListarPacientes() { /* Código de listado */ }
     }
 }
