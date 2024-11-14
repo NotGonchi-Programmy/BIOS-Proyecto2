@@ -1,0 +1,12 @@
+c:\users\emanz\documents\visual studio 2015\Projects\Clinica\Clinica\bin\Debug\Clinica.exe.config
+c:\users\emanz\documents\visual studio 2015\Projects\Clinica\Clinica\obj\Debug\Clinica.csprojResolveAssemblyReference.cache
+c:\users\emanz\documents\visual studio 2015\Projects\Clinica\Clinica\bin\Debug\Clinica.exe
+c:\users\emanz\documents\visual studio 2015\Projects\Clinica\Clinica\bin\Debug\Clinica.pdb
+c:\users\emanz\documents\visual studio 2015\Projects\Clinica\Clinica\obj\Debug\Clinica.exe
+c:\users\emanz\documents\visual studio 2015\Projects\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\emanz\Desktop\Clinica\Clinica\bin\Debug\Clinica.exe.config
+C:\Users\emanz\Desktop\Clinica\Clinica\obj\Debug\Clinica.exe
+C:\Users\emanz\Desktop\Clinica\Clinica\obj\Debug\Clinica.pdb
+C:\Users\emanz\Desktop\Clinica\Clinica\bin\Debug\Clinica.exe
+C:\Users\emanz\Desktop\Clinica\Clinica\bin\Debug\Clinica.pdb
+C:\Users\emanz\Desktop\Clinica\Clinica\obj\Debug\Clinica.csprojResolveAssemblyReference.cache
